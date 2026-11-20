@@ -41,7 +41,7 @@ Welcome to my personal portfolio repository! This project showcases my skills, e
 ## 📬 Connect With Me
 - 🐙 **GitHub:** [@namrata3904](https://github.com/namrata3904)
 - 💼 **LinkedIn:** [Your LinkedIn Profile URL](#)
-- 📧 **Email:** `your-email@example.com`
+- 📧 **Email:** `namratashekhawat73@gmail.com`
 
 ---
 
