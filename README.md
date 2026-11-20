@@ -38,6 +38,15 @@ Welcome to my personal portfolio repository! This project showcases my skills, e
 
 ---
 
+## 📚 Documentation
+- [About Me](ABOUT.md) — Personal background and core development principles
+- [Technical Skills](SKILLS.md) — Comprehensive toolkit and technologies
+- [Projects](PROJECTS.md) — In-depth breakdown of portfolio work
+- [Roadmap](ROADMAP.md) — Upcoming features and milestones
+- [Changelog](CHANGELOG.md) — Project history and updates
+
+---
+
 ## 📬 Connect With Me
 - 🐙 **GitHub:** [@namrata3904](https://github.com/namrata3904)
 - 💼 **LinkedIn:** [Your LinkedIn Profile URL](#)
