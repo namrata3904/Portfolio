@@ -1,21 +1,51 @@
 /* ==========================================================================
-   NAMRATA SHEKHAWAT — INTERACTIVE SCRIPT
-   - Theme toggling (Dark / Light)
-   - Sticky navbar & active scroll tracking
-   - Pillar switcher tabs (Tech / Model / SMM)
-   - Gallery category filter
-   - High-res Lightbox modal (Images & Video player)
-   - Contact form handler
+   NAMRATA SHEKHAWAT — HIGH-AESTHETIC PORTFOLIO SCRIPT
+   - Interactive Custom Cursor with Magnetic Smoothing
+   - Dynamic Number Counter Animation
+   - Lightbox Modal (Images & Videos)
+   - Tab switching & Gallery filtering
+   - Theme toggling & Form dispatch
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  // --- 1. Theme Toggle (Dark / Light) ---
+  // --- 1. Custom Luxury Cursor ---
+  const cursorDot = document.getElementById('cursor-dot');
+  const cursorOutline = document.getElementById('cursor-outline');
+
+  if (cursorDot && cursorOutline && window.innerWidth > 992) {
+    window.addEventListener('mousemove', (e) => {
+      const posX = e.clientX;
+      const posY = e.clientY;
+
+      cursorDot.style.left = `${posX}px`;
+      cursorDot.style.top = `${posY}px`;
+
+      cursorOutline.animate({
+        left: `${posX}px`,
+        top: `${posY}px`
+      }, { duration: 400, fill: "forwards" });
+    });
+
+    // Expand cursor on clickable elements
+    const clickables = document.querySelectorAll('a, button, .gallery-card, .insta-cell, input, select, textarea');
+    clickables.forEach(el => {
+      el.addEventListener('mouseenter', () => {
+        cursorOutline.style.transform = 'translate(-50%, -50%) scale(1.6)';
+        cursorOutline.style.borderColor = 'var(--gold-primary)';
+      });
+      el.addEventListener('mouseleave', () => {
+        cursorOutline.style.transform = 'translate(-50%, -50%) scale(1)';
+        cursorOutline.style.borderColor = 'var(--gold-primary)';
+      });
+    });
+  }
+
+  // --- 2. Theme Toggle (Dark / Light) ---
   const themeToggle = document.getElementById('theme-toggle');
   const body = document.body;
   const themeIcon = themeToggle ? themeToggle.querySelector('i') : null;
 
-  // Retrieve saved theme or default to dark
   const savedTheme = localStorage.getItem('portfolio-theme') || 'dark';
   if (savedTheme === 'light') {
     body.classList.remove('dark-theme');
@@ -48,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // --- 2. Mobile Navigation Toggle ---
+  // --- 3. Mobile Navigation ---
   const navToggle = document.getElementById('nav-toggle');
   const navMenu = document.getElementById('nav-menu');
   const navLinks = document.querySelectorAll('.nav-link');
@@ -58,7 +88,6 @@ document.addEventListener('DOMContentLoaded', () => {
       navMenu.classList.toggle('active');
     });
 
-    // Close menu when a link is clicked
     navLinks.forEach(link => {
       link.addEventListener('click', () => {
         navMenu.classList.remove('active');
@@ -66,28 +95,42 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // --- 3. Active Nav Link on Scroll ---
-  const sections = document.querySelectorAll('section[id]');
-  window.addEventListener('scroll', () => {
-    const scrollY = window.pageYOffset;
+  // --- 4. Stat Numbers Counter Animation ---
+  const stats = document.querySelectorAll('.stat-num');
+  let animated = false;
 
-    sections.forEach(current => {
-      const sectionHeight = current.offsetHeight;
-      const sectionTop = current.offsetTop - 120;
-      const sectionId = current.getAttribute('id');
-      const matchingLink = document.querySelector(`.nav-list a[href*="${sectionId}"]`);
+  const animateStats = () => {
+    stats.forEach(stat => {
+      const target = +stat.getAttribute('data-target');
+      let current = 0;
+      const increment = target / 40;
 
-      if (matchingLink) {
-        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-          matchingLink.classList.add('active');
+      const updateCount = () => {
+        current += increment;
+        if (current < target) {
+          stat.innerText = Math.ceil(current);
+          requestAnimationFrame(updateCount);
         } else {
-          matchingLink.classList.remove('active');
+          stat.innerText = target;
         }
+      };
+      updateCount();
+    });
+  };
+
+  const statObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting && !animated) {
+        animateStats();
+        animated = true;
       }
     });
-  });
+  }, { threshold: 0.5 });
 
-  // --- 4. About Me Pillar Tabs ---
+  const statSection = document.querySelector('.hero-stats');
+  if (statSection) statObserver.observe(statSection);
+
+  // --- 5. About Me Tabs ---
   const tabButtons = document.querySelectorAll('.tab-btn');
   const tabPanes = document.querySelectorAll('.tab-pane');
 
@@ -99,13 +142,11 @@ document.addEventListener('DOMContentLoaded', () => {
       button.classList.add('active');
       const targetTab = button.getAttribute('data-tab');
       const activePane = document.getElementById(`pane-${targetTab}`);
-      if (activePane) {
-        activePane.classList.add('active');
-      }
+      if (activePane) activePane.classList.add('active');
     });
   });
 
-  // --- 5. Visual Portfolio Filters ---
+  // --- 6. Visual Portfolio Gallery Filters ---
   const filterBtns = document.querySelectorAll('.filter-btn');
   const galleryItems = document.querySelectorAll('.gallery-item');
 
@@ -128,7 +169,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // --- 6. Lightbox & Video Modal ---
+  // --- 7. Lightbox & Video Modal ---
   const modal = document.getElementById('media-modal');
   const modalMediaContainer = document.getElementById('modal-media-container');
   const modalTitle = document.getElementById('modal-title');
@@ -157,13 +198,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     modal.classList.add('active');
     modal.setAttribute('aria-hidden', 'false');
-    document.body.style.overflow = 'hidden'; // Stop background scroll
+    document.body.style.overflow = 'hidden';
   };
 
   const closeModal = () => {
     modal.classList.remove('active');
     modal.setAttribute('aria-hidden', 'true');
-    modalMediaContainer.innerHTML = ''; // Stop video playback
+    modalMediaContainer.innerHTML = '';
     document.body.style.overflow = '';
   };
 
@@ -180,14 +221,13 @@ document.addEventListener('DOMContentLoaded', () => {
   if (modalClose) modalClose.addEventListener('click', closeModal);
   if (modalBackdrop) modalBackdrop.addEventListener('click', closeModal);
 
-  // Close on Escape key
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && modal && modal.classList.contains('active')) {
       closeModal();
     }
   });
 
-  // --- 7. Contact Form Handler (Direct Mailto / Visual Confirmation) ---
+  // --- 8. Contact Form Dispatch ---
   const contactForm = document.getElementById('contact-form');
   const formFeedback = document.getElementById('form-feedback');
 
@@ -200,17 +240,14 @@ document.addEventListener('DOMContentLoaded', () => {
       const type = document.getElementById('collab-type').value;
       const message = document.getElementById('message').value.trim();
 
-      // Construct a clean mailto link
-      const subject = encodeURIComponent(`[Portfolio Inquiry - ${type.toUpperCase()}] from ${name}`);
-      const bodyText = encodeURIComponent(`Hi Namrata,\n\nName: ${name}\nEmail: ${email}\nInquiry Type: ${type}\n\nMessage:\n${message}\n\nSent from your Portfolio Website.`);
+      const subject = encodeURIComponent(`[Portfolio Collaboration - ${type.toUpperCase()}] from ${name}`);
+      const bodyText = encodeURIComponent(`Hi Namrata,\n\nName: ${name}\nEmail: ${email}\nInquiry Type: ${type}\n\nProject Vision:\n${message}\n\nSent from your Portfolio.`);
 
-      // Provide feedback
       if (formFeedback) {
         formFeedback.className = 'form-feedback success';
-        formFeedback.innerHTML = `<strong>Thank you, ${name}!</strong> Opening your email client to send your message directly to namratashekhawat73@gmail.com...`;
+        formFeedback.innerHTML = `<strong>Thank you, ${name}!</strong> Opening your email client to send directly to namratashekhawat73@gmail.com...`;
       }
 
-      // Open email client
       setTimeout(() => {
         window.location.href = `mailto:namratashekhawat73@gmail.com?subject=${subject}&body=${bodyText}`;
       }, 700);
