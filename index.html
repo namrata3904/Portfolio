@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Namrata Shekhawat | Tech Engineer • Model • Social Media Strategist</title>
+  <meta name="description" content="Portfolio of Namrata Shekhawat — Final Year B.Tech Student, Commercial & Fashion Model, and Brand Social Media Manager.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Syne:wght@600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-theme">
+
+  <!-- Floating Navigation -->
+  <header class="header" id="header">
+    <div class="nav-container">
+      <a href="#hero" class="logo">
+        <span class="logo-text">Namrata<span class="dot">.</span></span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#gallery" class="nav-link">Visual Portfolio</a></li>
+          <li><a href="#social-work" class="nav-link">Brand Growth</a></li>
+          <li><a href="#contact" class="nav-link nav-cta">Let's Connect</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Open menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="hero-bg-glow"></div>
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="badge-pill">
+            <span class="pulse-dot"></span>
+            <span>Final Year B.Tech Student & Creative Visionary</span>
+          </div>
+          
+          <h1 class="hero-title">
+            Where <span class="gradient-text">Engineering</span> Meets <span class="editorial-text">Aesthetic Expression</span>.
+          </h1>
+
+          <p class="hero-subtitle">
+            I bridge three worlds: <strong>Software Engineering</strong>, high-impact <strong>Fashion & Commercial Modeling</strong>, and data-driven <strong>Social Media Brand Strategy</strong>.
+          </p>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-num">4th</span>
+              <span class="stat-label">Year B.Tech</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-num">15+</span>
+              <span class="stat-label">Brand Campaigns</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-num">2M+</span>
+              <span class="stat-label">Content Impressions</span>
+            </div>
+          </div>
+
+          <div class="hero-buttons">
+            <a href="#gallery" class="btn btn-primary">
+              <span>View Visual Book</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>Collaborate With Me</span>
+              <i class="fa-solid fa-paper-plane"></i>
+            </a>
+          </div>
+
+          <div class="hero-social-links">
+            <a href="https://github.com/namrata3904" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="mailto:namratashekhawat73@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-card-stack">
+            <div class="hero-image-wrapper">
+              <!-- Placeholder image featuring an editorial modern portrait -->
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80" alt="Namrata Shekhawat" class="hero-img" id="hero-profile-img">
+              <div class="hero-image-overlay"></div>
+              
+              <div class="floating-tag tag-tech">
+                <i class="fa-solid fa-code"></i>
+                <div>
+                  <small>Logic & Code</small>
+                  <strong>B.Tech Tech Student</strong>
+                </div>
+              </div>
+
+              <div class="floating-tag tag-model">
+                <i class="fa-solid fa-camera"></i>
+                <div>
+                  <small>Couture & Commercial</small>
+                  <strong>Fashion Model</strong>
+                </div>
+              </div>
+
+              <div class="floating-tag tag-smm">
+                <i class="fa-solid fa-chart-line"></i>
+                <div>
+                  <small>Organic Reach</small>
+                  <strong>Brand Strategist</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section with Interactive Tabs -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">The Multi-Hyphenate Story</span>
+          <h2 class="section-title">One Mind, <span class="gradient-text">Three Dimensions</span></h2>
+          <p class="section-desc">
+            Who says you have to pick one lane? Here is how my engineering mindset, editorial eye, and digital marketing strategies empower one another.
+          </p>
+        </div>
+
+        <!-- Pillar Switcher Tabs -->
+        <div class="about-tabs">
+          <button class="tab-btn active" data-tab="tech">
+            <i class="fa-solid fa-laptop-code"></i>
+            <span>The Tech Mind</span>
+          </button>
+          <button class="tab-btn" data-tab="model">
+            <i class="fa-solid fa-gem"></i>
+            <span>The Model & Muse</span>
+          </button>
+          <button class="tab-btn" data-tab="smm">
+            <i class="fa-solid fa-bullhorn"></i>
+            <span>The Social Media Strategist</span>
+          </button>
+        </div>
+
+        <!-- Tab Contents -->
+        <div class="tab-panes">
+          <!-- Tech Pane -->
+          <div class="tab-pane active" id="pane-tech">
+            <div class="pane-grid">
+              <div class="pane-content">
+                <span class="role-pill">Engineering & Development</span>
+                <h3>Transforming Logic into Functional Experiences</h3>
+                <p>
+                  As a final-year B.Tech computer science/engineering student, I thrive on structured problem-solving, architectural thinking, and clean code. Whether building responsive web layouts, exploring full-stack engineering, or dissecting algorithms, tech gives me the analytical rigor behind everything I build.
+                </p>
+                <ul class="bullet-list">
+                  <li><i class="fa-solid fa-check"></i> Final year engineering with solid fundamentals in data structures, algorithms, and OOP.</li>
+                  <li><i class="fa-solid fa-check"></i> Web development with HTML5, CSS3, JavaScript, React concepts, and Git version control.</li>
+                  <li><i class="fa-solid fa-check"></i> Detail-oriented UI/UX sensibility that elevates technical products into aesthetic digital experiences.</li>
+                </ul>
+              </div>
+              <div class="pane-stats-box">
+                <div class="quick-metric">
+                  <h4>Technical Focus</h4>
+                  <p>Frontend Engineering, Web Standards, UI Design, Analytical Problem Solving</p>
+                </div>
+                <div class="quick-metric">
+                  <h4>Status</h4>
+                  <p>B.Tech Final Year (2026/2027) • Open to Software Roles & Tech Collabs</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Model Pane -->
+          <div class="tab-pane" id="pane-model">
+            <div class="pane-grid">
+              <div class="pane-content">
+                <span class="role-pill">Editorial & Commercial</span>
+                <h3>Bringing Brand Visions to Life on Camera</h3>
+                <p>
+                  Modeling isn't just about posing—it is visual communication, poise, and storytelling. Working with diverse ethnic, western, and lifestyle apparel brands, I understand camera angles, lighting dynamics, mood execution, and how to represent a brand's authentic identity.
+                </p>
+                <ul class="bullet-list">
+                  <li><i class="fa-solid fa-check"></i> Commercial & E-commerce shoots for apparel, jewelry, and lifestyle labels.</li>
+                  <li><i class="fa-solid fa-check"></i> Editorial fashion styling, creative poses, and runway poise.</li>
+                  <li><i class="fa-solid fa-check"></i> Professional work ethic: dependable, punctual, and adaptable on set.</li>
+                </ul>
+              </div>
+              <div class="pane-stats-box">
+                <div class="quick-metric">
+                  <h4>Modeling Niches</h4>
+                  <p>Ethnic Wear, Western Editorial, Beauty & Skincare, Streetwear, Commercial Catalog</p>
+                </div>
+                <div class="quick-metric">
+                  <h4>Booking Availability</h4>
+                  <p>Available for campaigns, lookbooks, catalog shoots, and brand ambassadorships</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SMM Pane -->
+          <div class="tab-pane" id="pane-smm">
+            <div class="pane-grid">
+              <div class="pane-content">
+                <span class="role-pill">Digital Growth & Brand Strategy</span>
+                <h3>Turning Scrolls into Loyal Brand Communities</h3>
+                <p>
+                  Combining an eye for aesthetics with analytical engineering mindset makes social media growth predictable. Having managed brand accounts, I design content funnels, produce viral short-form video reels, craft aesthetic feeds, and analyze Instagram/Meta analytics to maximize organic reach and conversions.
+                </p>
+                <ul class="bullet-list">
+                  <li><i class="fa-solid fa-check"></i> End-to-end content calendar creation, aesthetic curation, and feed design.</li>
+                  <li><i class="fa-solid fa-check"></i> Short-form video ideation, shooting, scripting, and hook optimization (Reels & Shorts).</li>
+                  <li><i class="fa-solid fa-check"></i> Audience engagement, influencer outreach, and metrics-driven growth reporting.</li>
+                </ul>
+              </div>
+              <div class="pane-stats-box">
+                <div class="quick-metric">
+                  <h4>Strategy Arsenal</h4>
+                  <p>Viral Reel Concepts, Community Building, Brand Voice, Meta Insights, Trend Forecasting</p>
+                </div>
+                <div class="quick-metric">
+                  <h4>Impact</h4>
+                  <p>Consistently scaled brand engagement by 200%+ through consistent visual storytelling</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience in Diverse Fields -->
+    <section class="section experience" id="experience">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Track Record</span>
+          <h2 class="section-title">Experience Across <span class="gradient-text">Diverse Arenas</span></h2>
+          <p class="section-desc">
+            A cross-disciplinary journey building software, elevating brands on camera, and managing digital communities.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <!-- Timeline Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-dot tech-dot"></div>
+            <div class="timeline-date">2023 — Present</div>
+            <div class="timeline-card">
+              <span class="tag-badge tech">Technology & Engineering</span>
+              <h3 class="timeline-title">B.Tech Engineering & Web Development</h3>
+              <p class="timeline-location">Final Year Undergrad • Computer Science & Engineering</p>
+              <p class="timeline-description">
+                Leading academic and self-directed software projects. Focused on responsive frontend architectures, JavaScript web apps, database interactions, and version-controlled collaborative coding.
+              </p>
+              <div class="skill-chips">
+                <span>HTML5 / CSS3</span>
+                <span>JavaScript</span>
+                <span>Git & GitHub</span>
+                <span>Problem Solving</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-dot smm-dot"></div>
+            <div class="timeline-date">2023 — Present</div>
+            <div class="timeline-card">
+              <span class="tag-badge smm">Social Media & Marketing</span>
+              <h3 class="timeline-title">Brand Social Media Strategist & Manager</h3>
+              <p class="timeline-location">Multiple Brands & Agencies</p>
+              <p class="timeline-description">
+                Managed end-to-end brand social profiles. Designed viral Reels concepts, authored engaging captions, scheduled multi-platform campaigns, and analyzed performance metrics to boost organic reach and follower retention.
+              </p>
+              <div class="skill-chips">
+                <span>Content Strategy</span>
+                <span>Reels & Video Ideation</span>
+                <span>Community Growth</span>
+                <span>Analytics & Reporting</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3 -->
+          <div class="timeline-item">
+            <div class="timeline-dot model-dot"></div>
+            <div class="timeline-date">2022 — Present</div>
+            <div class="timeline-card">
+              <span class="tag-badge model">Fashion & Commercial</span>
+              <h3 class="timeline-title">Commercial & Fashion Model</h3>
+              <p class="timeline-location">Freelance & Brand Collabs</p>
+              <p class="timeline-description">
+                Featured model for brand catalog shoots, e-commerce collections, ethnic and western campaigns. Collaborated with professional photographers, creative directors, and hair/makeup artists to deliver captivating imagery.
+              </p>
+              <div class="skill-chips">
+                <span>Lookbook & Catalog</span>
+                <span>Runway & Editorial</span>
+                <span>Creative Direction</span>
+                <span>Brand Ambassadorship</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Arsenal Matrix -->
+    <section class="section skills" id="skills">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Capabilities</span>
+          <h2 class="section-title">The <span class="gradient-text">Skills Arsenal</span></h2>
+          <p class="section-desc">
+            A balanced synthesis of analytical engineering, digital marketing savvy, and creative visual craft.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Skill Card 1: Tech -->
+          <div class="skill-card">
+            <div class="skill-card-icon tech-icon">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <h3>Tech & Development</h3>
+            <p>Building clean, accessible, modern web interfaces and functional software.</p>
+            <div class="skill-bars">
+              <div class="skill-progress">
+                <div class="skill-info">
+                  <span>HTML5 / CSS3 / Responsive Design</span>
+                  <span>90%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="width: 90%;"></div></div>
+              </div>
+              <div class="skill-progress">
+                <div class="skill-info">
+                  <span>JavaScript (ES6+)</span>
+                  <span>80%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="width: 80%;"></div></div>
+              </div>
+              <div class="skill-progress">
+                <div class="skill-info">
+                  <span>Git, GitHub & Version Control</span>
+                  <span>85%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="width: 85%;"></div></div>
+              </div>
+              <div class="skill-progress">
+                <div class="skill-info">
+                  <span>React & Modern Framework Concepts</span>
+                  <span>75%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="width: 75%;"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Card 2: Social Media -->
+          <div class="skill-card">
+            <div class="skill-card-icon smm-icon">
+              <i class="fa-solid fa-chart-pie"></i>
+            </div>
+            <h3>Social Media & Growth</h3>
+            <p>Cultivating brand presence, optimizing conversions, and creating viral content.</p>
+            <div class="skill-bars">
+              <div class="skill-progress">
+                <div class="skill-info">
+                  <span>Instagram & Reels Strategy</span>
+                  <span>95%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="width: 95%;"></div></div>
+              </div>
+              <div class="skill-progress">
+                <div class="skill-info">
+                  <span>Content Planning & Aesthetic Feeds</span>
+                  <span>90%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="width: 90%;"></div></div>
+              </div>
+              <div class="skill-progress">
+                <div class="skill-info">
+                  <span>Meta Insights & Analytics</span>
+                  <span>85%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="width: 85%;"></div></div>
+              </div>
+              <div class="skill-progress">
+                <div class="skill-info">
+                  <span>Influencer Outreach & Community Mgmt</span>
+                  <span>90%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="width: 90%;"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Card 3: Creative & Modeling -->
+          <div class="skill-card">
+            <div class="skill-card-icon model-icon">
+              <i class="fa-solid fa-camera-retro"></i>
+            </div>
+            <h3>Modeling & Production</h3>
+            <p>Elevating brands through visual storytelling, expression, and creative eye.</p>
+            <div class="skill-bars">
+              <div class="skill-progress">
+                <div class="skill-info">
+                  <span>Camera Posing & Angle Mastery</span>
+                  <span>95%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="width: 95%;"></div></div>
+              </div>
+              <div class="skill-progress">
+                <div class="skill-info">
+                  <span>Editorial & Commercial Styling</span>
+                  <span>90%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="width: 90%;"></div></div>
+              </div>
+              <div class="skill-progress">
+                <div class="skill-info">
+                  <span>Video Editing (CapCut, Premiere tools)</span>
+                  <span>85%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="width: 85%;"></div></div>
+              </div>
+              <div class="skill-progress">
+                <div class="skill-info">
+                  <span>Creative Direction & Moodboarding</span>
+                  <span>90%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="width: 90%;"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visual Portfolio & Media Gallery (Photos & Videos) -->
+    <section class="section gallery" id="gallery">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Visual Showcase</span>
+          <h2 class="section-title">Photos, Campaigns & <span class="gradient-text">Video Works</span></h2>
+          <p class="section-desc">
+            Explore curated snapshots from modeling campaigns, brand reels, tech projects, and creative shoots.
+          </p>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="gallery-filters">
+          <button class="filter-btn active" data-filter="all">All Media</button>
+          <button class="filter-btn" data-filter="modeling">Modeling & Editorial</button>
+          <button class="filter-btn" data-filter="commercial">Brand Campaigns</button>
+          <button class="filter-btn" data-filter="video">Videos & Reels</button>
+          <button class="filter-btn" data-filter="tech">Tech & Creative</button>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="gallery-grid" id="gallery-grid">
+          
+          <!-- Item 1: Modeling -->
+          <div class="gallery-item" data-category="modeling" data-type="image" data-src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1000&q=80" data-title="High Fashion Editorial" data-desc="Studio editorial lookbook shoot focusing on lighting, silhouettes, and expression.">
+            <div class="gallery-card">
+              <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=600&q=80" alt="Fashion Editorial" loading="lazy">
+              <div class="gallery-overlay">
+                <span class="gallery-badge">Modeling</span>
+                <h4>High Fashion Editorial</h4>
+                <p>Studio Lookbook & Expression</p>
+                <div class="gallery-zoom-icon"><i class="fa-solid fa-expand"></i></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2: Commercial Brand -->
+          <div class="gallery-item" data-category="commercial" data-type="image" data-src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1000&q=80" data-title="Apparel Brand Campaign" data-desc="E-commerce catalog and festive apparel commercial shoot.">
+            <div class="gallery-card">
+              <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=600&q=80" alt="Brand Campaign" loading="lazy">
+              <div class="gallery-overlay">
+                <span class="gallery-badge">Commercial</span>
+                <h4>Apparel Brand Campaign</h4>
+                <p>E-commerce & Lifestyle</p>
+                <div class="gallery-zoom-icon"><i class="fa-solid fa-expand"></i></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3: Video Reel Showcase -->
+          <div class="gallery-item" data-category="video" data-type="video" data-src="https://www.w3schools.com/html/mov_bbb.mp4" data-title="Viral Reel & Video Production" data-desc="Short-form dynamic reel crafted for social brand engagement with rhythmic transitions.">
+            <div class="gallery-card video-card">
+              <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=600&q=80" alt="Video Reel" loading="lazy">
+              <div class="video-play-badge"><i class="fa-solid fa-play"></i></div>
+              <div class="gallery-overlay">
+                <span class="gallery-badge">Video Reel</span>
+                <h4>Brand Story Reel</h4>
+                <p>Concept, Model & Edit</p>
+                <div class="gallery-zoom-icon"><i class="fa-solid fa-play"></i></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 4: Modeling Portrait -->
+          <div class="gallery-item" data-category="modeling" data-type="image" data-src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1000&q=80" data-title="Outdoor Golden Hour Portrait" data-desc="Natural lighting lifestyle portrait session.">
+            <div class="gallery-card">
+              <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=600&q=80" alt="Golden Hour Portrait" loading="lazy">
+              <div class="gallery-overlay">
+                <span class="gallery-badge">Modeling</span>
+                <h4>Natural Light Portrait</h4>
+                <p>Lifestyle & Expressions</p>
+                <div class="gallery-zoom-icon"><i class="fa-solid fa-expand"></i></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 5: Tech Showcase -->
+          <div class="gallery-item" data-category="tech" data-type="image" data-src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1000&q=80" data-title="Web Development & Engineering" data-desc="Modern responsive web applications, code architecture, and interactive digital interfaces.">
+            <div class="gallery-card">
+              <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80" alt="Tech Architecture" loading="lazy">
+              <div class="gallery-overlay">
+                <span class="gallery-badge">Tech & Code</span>
+                <h4>Engineering Systems</h4>
+                <p>Web Interfaces & Full-Stack</p>
+                <div class="gallery-zoom-icon"><i class="fa-solid fa-expand"></i></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 6: Commercial Campaign -->
+          <div class="gallery-item" data-category="commercial" data-type="image" data-src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1000&q=80" data-title="Retail & Brand Campaign" data-desc="High-impact shopping festival commercial shoot with dynamic styling.">
+            <div class="gallery-card">
+              <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=600&q=80" alt="Commercial Campaign" loading="lazy">
+              <div class="gallery-overlay">
+                <span class="gallery-badge">Commercial</span>
+                <h4>Retail Fashion Campaign</h4>
+                <p>Print & Digital Distribution</p>
+                <div class="gallery-zoom-icon"><i class="fa-solid fa-expand"></i></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="gallery-footer-note">
+          <p><i class="fa-solid fa-circle-info"></i> Click any item to inspect in high-resolution lightbox or view video reels. You can replace images with your own files anytime!</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Social Media Brand Growth Case Studies -->
+    <section class="section social-work" id="social-work">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Case Studies</span>
+          <h2 class="section-title">Brand Impact & <span class="gradient-text">Social Media Growth</span></h2>
+          <p class="section-desc">
+            How strategic content ideation, aesthetic direction, and audience engagement drive tangible metrics.
+          </p>
+        </div>
+
+        <div class="case-studies-grid">
+          <div class="case-card">
+            <div class="case-header">
+              <span class="case-type">Fashion & Retail Brand</span>
+              <h3>Organic Instagram Scaling Strategy</h3>
+            </div>
+            <p>
+              Revamped the content calendar from static product photos to high-energy styling reels and storytelling carousels.
+            </p>
+            <div class="metric-row">
+              <div class="metric-block">
+                <strong>+240%</strong>
+                <span>Reach Growth</span>
+              </div>
+              <div class="metric-block">
+                <strong>1.2M+</strong>
+                <span>Reel Views</span>
+              </div>
+              <div class="metric-block">
+                <strong>4.8%</strong>
+                <span>Avg Engagement</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="case-card">
+            <div class="case-header">
+              <span class="case-type">Lifestyle & Wellness Brand</span>
+              <h3>Aesthetic Rebranding & Community Hook</h3>
+            </div>
+            <p>
+              Crafted a cohesive visual identity, UGC creator brief, and automated DM funnel for customer inquiries.
+            </p>
+            <div class="metric-row">
+              <div class="metric-block">
+                <strong>3.5x</strong>
+                <span>Follower Inflow</span>
+              </div>
+              <div class="metric-block">
+                <strong>850K+</strong>
+                <span>Impressions</span>
+              </div>
+              <div class="metric-block">
+                <strong>35%</strong>
+                <span>Save Rate</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="case-card">
+            <div class="case-header">
+              <span class="case-type">Personal Brand & Creator Management</span>
+              <h3>Influencer Collaboration & Virality Engine</h3>
+            </div>
+            <p>
+              Engineered short-form content hooks, trending audio synchronization, and targeted hashtags to crack the Explore algorithm.
+            </p>
+            <div class="metric-row">
+              <div class="metric-block">
+                <strong>500K+</strong>
+                <span>Viral Reel</span>
+              </div>
+              <div class="metric-block">
+                <strong>+45%</strong>
+                <span>Profile Visits</span>
+              </div>
+              <div class="metric-block">
+                <strong>100%</strong>
+                <span>Organic Lift</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Collaboration Section -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="contact-box">
+          <div class="contact-grid">
+            <div class="contact-info">
+              <span class="section-tag">Let's Connect</span>
+              <h2 class="contact-heading">Ready to create something <span class="gradient-text">exceptional</span> together?</h2>
+              <p class="contact-text">
+                Whether you are looking for an analytical software engineer, a versatile model for an upcoming brand shoot, or a dedicated strategist to grow your brand's digital presence, my inbox is always open.
+              </p>
+
+              <div class="contact-methods">
+                <a href="mailto:namratashekhawat73@gmail.com" class="method-item">
+                  <div class="method-icon"><i class="fa-solid fa-envelope"></i></div>
+                  <div>
+                    <small>Direct Email</small>
+                    <strong>namratashekhawat73@gmail.com</strong>
+                  </div>
+                </a>
+
+                <a href="https://github.com/namrata3904" target="_blank" rel="noopener" class="method-item">
+                  <div class="method-icon"><i class="fa-brands fa-github"></i></div>
+                  <div>
+                    <small>Code Repository</small>
+                    <strong>github.com/namrata3904</strong>
+                  </div>
+                </a>
+
+                <div class="method-item">
+                  <div class="method-icon"><i class="fa-solid fa-location-dot"></i></div>
+                  <div>
+                    <small>Location & Base</small>
+                    <strong>India • Open for Remote & On-Site Projects</strong>
+                  </div>
+                </div>
+              </div>
+
+              <div class="social-pills">
+                <a href="https://instagram.com" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/namrata3904" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+              </div>
+            </div>
+
+            <div class="contact-form-wrapper">
+              <form class="contact-form" id="contact-form">
+                <div class="form-group">
+                  <label for="name">Your Name</label>
+                  <input type="text" id="name" name="name" placeholder="e.g. Priya Sharma" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Your Email</label>
+                  <input type="email" id="email" name="email" placeholder="name@example.com" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="collab-type">Collaboration Type</label>
+                  <select id="collab-type" name="type" required>
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="modeling">Brand Shoot / Modeling Assignment</option>
+                    <option value="smm">Social Media Management & Strategy</option>
+                    <option value="tech">Software Development / Tech Role</option>
+                    <option value="other">General Inquiry & Networking</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="message">Project Details</label>
+                  <textarea id="message" name="message" rows="4" placeholder="Tell me about your project, timeline, and vision..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block">
+                  <span>Send Inquiry</span>
+                  <i class="fa-solid fa-paper-plane"></i>
+                </button>
+                <div class="form-feedback" id="form-feedback"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Interactive Lightbox Modal (For Photos & Videos) -->
+  <div class="modal" id="media-modal" aria-hidden="true">
+    <div class="modal-backdrop" id="modal-backdrop"></div>
+    <div class="modal-content">
+      <button class="modal-close" id="modal-close" aria-label="Close modal">&times;</button>
+      
+      <div class="modal-media-container" id="modal-media-container">
+        <!-- Injected via JS (img or video) -->
+      </div>
+
+      <div class="modal-caption">
+        <h3 id="modal-title">Title</h3>
+        <p id="modal-desc">Description</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; 2026 Namrata Shekhawat. Crafted with code, aesthetic vision, and passion.</p>
+      <a href="#hero" class="back-to-top" aria-label="Back to top">
+        <span>Back to Top</span>
+        <i class="fa-solid fa-arrow-up"></i>
+      </a>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,57 +1,71 @@
-# 👩‍💻 Namrata | Developer Portfolio
+# ✨ Namrata Shekhawat | Portfolio Website
 
-Welcome to my personal portfolio repository! This project showcases my skills, experience, and the software projects I've built.
+> **Where Engineering Meets Aesthetic Expression**  
+> Final Year B.Tech Student • Commercial & Fashion Model • Brand Social Media Strategist
 
----
-
-## 🚀 About Me
-- 🔭 Currently working on building modern, responsive web applications.
-- 🌱 Continuously learning new frontend & backend technologies.
-- 💡 Passionate about clean code, UI/UX design, and problem-solving.
-- 💬 Ask me about web development, JavaScript, and building interactive web experiences.
+Welcome to my interactive portfolio repository! This website is crafted to showcase my multi-hyphenate journey across software engineering, professional modeling campaigns, and social media brand growth.
 
 ---
 
-## 🛠️ Tech Stack & Skills
-
-### **Frontend**
-- HTML5, CSS3, JavaScript (ES6+)
-- React / Modern Web Frameworks
-- Responsive Design & UI Styling (Tailwind / Bootstrap)
-
-### **Backend & Tools**
-- Node.js / Express
-- Git & GitHub for Version Control
-- RESTful APIs
+## 🌟 Live Demo & Deployment
+- **Live URL:** [https://namrata3904.github.io/Portfolio/](https://namrata3904.github.io/Portfolio/) *(Enable via Settings > Pages)*
+- **Local Preview:** Simply double-click [`index.html`](index.html) or open it with any web browser.
 
 ---
 
-## 📂 Featured Projects
+## 💎 Website Features & Sections
 
-| Project | Description | Tech Stack | Live Demo |
-| :--- | :--- | :--- | :--- |
-| **Portfolio Website** | Modern interactive personal portfolio | HTML, CSS, JavaScript | [Live Demo](#) |
-| **Project Two** | Web application with responsive UI | React, CSS | [Live Demo](#) |
-| **Project Three** | Full-stack application with API integration | Node.js, Express, DB | [Live Demo](#) |
-
-*(See [PROJECTS.md](PROJECTS.md) for full project architecture and documentation)*
+1. **Editorial Hero Section:**
+   - Multi-badge identity tagline: *Tech Student × Fashion Model × Brand Strategist*
+   - Real-time stat counters (Years of diverse experience, brand shoots, impressions driven)
+   - Interactive floating pillar tags (`#Code`, `#Model`, `#SocialMedia`)
+2. **About Me (Three Dimensions):**
+   - Interactive tab switcher between **The Tech Mind**, **The Model & Muse**, and **The Social Media Strategist**
+3. **Experience Across Diverse Arenas:**
+   - Visual timeline mapping academic engineering, brand management, and commercial modeling work
+4. **Skills Arsenal Matrix:**
+   - Grouped into three distinct domains with animated proficiency meters:
+     - *Tech & Web Development* (HTML5/CSS3, JavaScript, React concepts, Git/GitHub)
+     - *Social Media & Growth* (Reels strategy, Meta Insights, aesthetic curation, community management)
+     - *Modeling & Production* (Camera angles, runway, video editing, creative direction)
+5. **Interactive Visual Showcase (Photos & Video Reels):**
+   - Filterable gallery: `All Media`, `Modeling & Editorial`, `Brand Campaigns`, `Videos & Reels`, `Tech & Creative`
+   - High-definition lightbox modal for full-screen photo viewing
+   - Embedded video reel player for dynamic video content
+6. **Social Media Growth Case Studies:**
+   - Highlight metrics showing organic reach growth (+240%), reel impressions (1.2M+), and engagement rates
+7. **Interactive Collaboration Form:**
+   - Filter inquiries by modeling assignment, social media management, software role, or general collaboration
+   - Direct mailto dispatch to `namratashekhawat73@gmail.com`
+8. **Dark / Light Luxury Mode:**
+   - One-click theme switcher with persistent local storage preferences
 
 ---
 
-## 📚 Documentation
-- [About Me](ABOUT.md) — Personal background and core development principles
-- [Technical Skills](SKILLS.md) — Comprehensive toolkit and technologies
-- [Projects](PROJECTS.md) — In-depth breakdown of portfolio work
-- [Roadmap](ROADMAP.md) — Upcoming features and milestones
-- [Changelog](CHANGELOG.md) — Project history and updates
+## 🖼️ How to Replace Placeholder Photos & Videos with Your Own
+
+1. Place your own photos/videos in the project folder (or create an `assets/` subfolder).
+2. Open [`index.html`](index.html) in your editor.
+3. Look for the `<!-- Hero Visual -->` section to replace the main profile image (`hero-profile-img`).
+4. Look for the `<!-- Visual Portfolio -->` grid to update the `data-src` and `img src` with your own photoshoot images and video clips!
+
+---
+
+## 📚 Repository Documentation
+- [ABOUT.md](ABOUT.md) — Personal background and core engineering principles
+- [SKILLS.md](SKILLS.md) — Detailed technical and creative skill inventory
+- [PROJECTS.md](PROJECTS.md) — Case studies and portfolio projects
+- [ROADMAP.md](ROADMAP.md) — Planned features and development milestones
+- [CHANGELOG.md](CHANGELOG.md) — Release notes and update history
 
 ---
 
 ## 📬 Connect With Me
 - 🐙 **GitHub:** [@namrata3904](https://github.com/namrata3904)
-- 💼 **LinkedIn:** [Your LinkedIn Profile URL](#)
 - 📧 **Email:** `namratashekhawat73@gmail.com`
+- 💼 **LinkedIn:** [linkedin.com](https://linkedin.com)
+- 📸 **Instagram:** [instagram.com](https://instagram.com)
 
 ---
 
-⭐️ *Feel free to star this repository if you like what you see!*
+⭐️ *Crafted with code, aesthetic vision, and passion.*
